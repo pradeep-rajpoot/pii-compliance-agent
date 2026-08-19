@@ -1,0 +1,31 @@
+[project]
+name = "pii-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic[bedrock]>=0.122.0",
+    "fastapi>=0.141.1",
+    "openpyxl>=3.1.5",
+    "pdfplumber>=0.11.10",
+    "pydantic>=2",
+    "pydantic-settings>=2.15.0",
+    "pypdf>=6.16.1",
+    "python-docx>=1.2.0",
+    "python-multipart>=0.0.32",
+    "reportlab>=5.0.0",
+    "uvicorn[standard]>=0.52.3",
+    "xlrd>=2.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

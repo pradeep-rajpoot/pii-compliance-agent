@@ -1,0 +1,56 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  background: #f9f9f7;
+  border: 1px solid #e1e0d9;
+}
+
+.banner[data-variant="error"] {
+  background: #fdecec;
+  border-color: #e34948;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #0b0b0b;
+}
+
+.errorTitle {
+  margin: 0 0 0.15rem;
+  font-weight: 700;
+  color: #a3231f;
+}
+
+.errorDetail {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #52514e;
+}
+
+.errorDetail code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background: rgba(11, 11, 11, 0.06);
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  border: 2px solid rgba(11, 11, 11, 0.15);
+  border-top-color: #2a78d6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

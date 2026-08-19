@@ -1,0 +1,17 @@
+{
+  "user": {
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "ssn": "000-00-0000"
+  },
+  "notes": "no pii here",
+  "contacts": [
+    {
+      "name": "John Smith",
+      "phone": "555-010-1234"
+    }
+  ],
+  "empty_field": "",
+  "null_field": null,
+  "active": true
+}

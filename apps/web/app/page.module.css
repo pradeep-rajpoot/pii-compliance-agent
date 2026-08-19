@@ -1,0 +1,40 @@
+.main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: -0.75rem 0 0;
+  color: #52514e;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.resetButton {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #52514e;
+  background: transparent;
+  border: 1px solid #c3c2b7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background: #f0efec;
+}

@@ -1,0 +1,53 @@
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2.5rem 1.5rem;
+  border: 2px dashed #c3c2b7;
+  border-radius: 12px;
+  background: #fcfcfb;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.dropzone:hover,
+.dropzone:focus-visible {
+  border-color: #2a78d6;
+  outline: none;
+}
+
+.dropzone.active {
+  border-color: #2a78d6;
+  background: #eef4fc;
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0b0b0b;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #52514e;
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
