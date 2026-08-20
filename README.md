@@ -23,13 +23,13 @@ Clone, then from the repo root:
 # Backend
 cd apps/api
 uv sync
-vim .env   # fill in BEDROCK_REGION / BEDROCK_MODEL_ID at minimum
+cp .env.example .env   # fill in BEDROCK_REGION / BEDROCK_MODEL_ID at minimum
 cd ../..
 
 # Frontend
 cd apps/web
 pnpm install
-vim .env.local
+cp .env.local.example .env.local.example
 cd ../..
 ```
 
@@ -93,11 +93,11 @@ To find a model you actually have access to invoke:
 
 ```bash
 # List Claude models visible in a region
-aws bedrock list-foundation-models --region us-east-1 \
+aws bedrock list-foundation-models --region us-west-2 \
   --query "modelSummaries[?contains(modelId,'claude')].modelId" --output table
 
 # Newer models require a cross-region inference profile id, not the bare model id
-aws bedrock list-inference-profiles --region us-east-1 \
+aws bedrock list-inference-profiles --region us-west-2 \
   --query "inferenceProfileSummaries[?contains(inferenceProfileId,'claude')].inferenceProfileId" --output table
 ```
 
