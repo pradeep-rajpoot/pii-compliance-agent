@@ -14,3 +14,6 @@ __pycache__/
 
 # misc
 *.log
+
+# Local registry override (personal, not shared with the team -- see README)
+/.npmrc
